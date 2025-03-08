@@ -53,6 +53,3 @@ By default, the server runs on `http://localhost:3000`.
 - Express.js
 - Nodemon (for development)
 
-## License
-This project is licensed under the MIT License.
-
