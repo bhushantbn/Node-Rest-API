@@ -32,11 +32,20 @@ node-rest-api/
    ```bash
    npm install
    ```
+   Or install dependencies individually:
+   ```bash
+   npm install express mongoose dotenv nodemon
+   ```
 
 ## Usage
 ### Start the Server
+#### Production Mode
 ```bash
-node app.js
+npm start
+```
+#### Development Mode (with Nodemon)
+```bash
+npm run dev
 ```
 By default, the server runs on `http://localhost:3000`.
 
@@ -50,6 +59,12 @@ By default, the server runs on `http://localhost:3000`.
 | DELETE | /api/products/:id | Delete product by ID    |
 
 ## Dependencies
-- Express.js
-- Nodemon (for development)
+To install dependencies manually, run:
+```bash
+npm install express mongoose dotenv nodemon
+```
 
+- **Express.js** - Web framework for Node.js
+- **Mongoose** - ODM for MongoDB
+- **Dotenv** - Loads environment variables from a `.env` file
+- **Nodemon** - Automatically restarts the server during development
