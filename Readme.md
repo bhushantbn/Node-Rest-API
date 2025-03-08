@@ -32,10 +32,6 @@ node-rest-api/
    ```bash
    npm install
    ```
-   Or install dependencies individually:
-   ```bash
-   npm install express mongoose dotenv nodemon
-   ```
 
 ## Usage
 ### Start the Server
