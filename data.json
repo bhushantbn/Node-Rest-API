@@ -1,0 +1,143 @@
+[
+    {
+      "name": "iPhone 15",
+      "price": 999,
+      "featured": true,
+      "rating": 4.5,
+      "company": "apple"
+    },
+    {
+      "name": "Samsung Galaxy S23",
+      "price": 899,
+      "featured": false,
+      "rating": 4.3,
+      "company": "samsung"
+    },
+    {
+      "name": "Google Pixel 7 Pro",
+      "price": 799,
+      "featured": true,
+      "rating": 4.6,
+      "company": "google"
+    },
+    {
+      "name": "OnePlus 11",
+      "price": 749,
+      "featured": false,
+      "rating": 4.4,
+      "company": "oneplus"
+    },
+    {
+      "name": "Sony Xperia 1 V",
+      "price": 1199,
+      "featured": true,
+      "rating": 4.2,
+      "company": "sony"
+    },
+    {
+      "name": "Xiaomi 13 Pro",
+      "price": 999,
+      "featured": true,
+      "rating": 4.5,
+      "company": "xiaomi"
+    },
+    {
+      "name": "Asus ROG Phone 7",
+      "price": 1099,
+      "featured": false,
+      "rating": 4.7,
+      "company": "asus"
+    },
+    {
+      "name": "Samsung Galaxy Z Fold 5",
+      "price": 1799,
+      "featured": true,
+      "rating": 4.6,
+      "company": "samsung"
+    },
+    {
+      "name": "iPhone 14 Pro",
+      "price": 1099,
+      "featured": false,
+      "rating": 4.5,
+      "company": "apple"
+    },
+    {
+      "name": "Google Pixel 7a",
+      "price": 499,
+      "featured": true,
+      "rating": 4.3,
+      "company": "google"
+    },
+    {
+      "name": "OnePlus Nord 3",
+      "price": 449,
+      "featured": false,
+      "rating": 4.2,
+      "company": "oneplus"
+    },
+    {
+      "name": "Samsung Galaxy A54",
+      "price": 399,
+      "featured": true,
+      "rating": 4.1,
+      "company": "samsung"
+    },
+    {
+      "name": "Moto Edge 40",
+      "price": 699,
+      "featured": false,
+      "rating": 4.0,
+      "company": "motorola"
+    },
+    {
+      "name": "Xiaomi Redmi Note 12",
+      "price": 299,
+      "featured": true,
+      "rating": 4.2,
+      "company": "xiaomi"
+    },
+    {
+      "name": "Asus Zenfone 10",
+      "price": 799,
+      "featured": false,
+      "rating": 4.3,
+      "company": "asus"
+    },
+    {
+      "name": "Realme GT Neo 5",
+      "price": 599,
+      "featured": true,
+      "rating": 4.4,
+      "company": "realme"
+    },
+    {
+      "name": "iPhone SE 2023",
+      "price": 429,
+      "featured": false,
+      "rating": 4.1,
+      "company": "apple"
+    },
+    {
+      "name": "Samsung Galaxy S21 FE",
+      "price": 599,
+      "featured": true,
+      "rating": 4.2,
+      "company": "samsung"
+    },
+    {
+      "name": "Google Pixel Fold",
+      "price": 1799,
+      "featured": true,
+      "rating": 4.5,
+      "company": "google"
+    },
+    {
+      "name": "OnePlus 10 Pro",
+      "price": 799,
+      "featured": false,
+      "rating": 4.4,
+      "company": "oneplus"
+    }
+  ]
+  
