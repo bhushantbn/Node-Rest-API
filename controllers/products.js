@@ -1,4 +1,4 @@
-import { find } from "../models/product";
+import { find } from "../models/product.js";
 
 const getAllProducts = async (req, res) => {
   const { company, name, sort, select } = req.query;

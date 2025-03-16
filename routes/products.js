@@ -1,7 +1,7 @@
 import { Router } from "express";
 const router = Router();
-import { findByIdAndDelete, findByIdAndUpdate } from "../models/product"; // ✅ Ensure Product model is imported
-import { getAllProducts, getAllProductsTesting } from "../controllers/products";
+import { findByIdAndDelete, findByIdAndUpdate } from "../models/product.js"; // ✅ Ensure Product model is imported
+import { getAllProducts, getAllProductsTesting } from "../controllers/products.js";
 
 router.route("/").get(getAllProducts);
 router.route("/testing").get(getAllProductsTesting);
