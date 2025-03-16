@@ -1,14 +1,17 @@
 import { Router } from "express";
 const router = Router();
-import { findByIdAndDelete, findByIdAndUpdate } from "../models/product.js"; // ✅ Ensure Product model is imported
-import { getAllProducts, getAllProductsTesting } from "../controllers/products.js";
+import Product from "../models/product.js"; // ✅ Correct import
+import {
+  getAllProducts,
+  getAllProductsTesting,
+} from "../controllers/products.js";
 
 router.route("/").get(getAllProducts);
 router.route("/testing").get(getAllProductsTesting);
 
 router.delete("/:id", async (req, res) => {
   try {
-    const product = await findByIdAndDelete(req.params.id); // ✅ Use Product, not product
+    const product = await Product.findByIdAndDelete(req.params.id); // ✅ Correct usage
     if (!product) {
       return res.status(404).json({ message: "Product not found" });
     }
@@ -22,11 +25,11 @@ router.delete("/:id", async (req, res) => {
 
 router.put("/:id", async (req, res) => {
   try {
-    const product = await findByIdAndUpdate(
-      req.params.id,
-      req.body, // ✅ Update with request body
-      { new: true, runValidators: true } // ✅ Return updated document
-    );
+    const product = await Product.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true,
+    }); // ✅ Correct usage
+
     if (!product) {
       return res.status(404).json({ message: "Product not found" });
     }
