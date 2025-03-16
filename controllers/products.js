@@ -1,4 +1,4 @@
-const product = require("../models/product");
+import { find } from "../models/product";
 
 const getAllProducts = async (req, res) => {
   const { company, name, sort, select } = req.query;
@@ -9,7 +9,7 @@ const getAllProducts = async (req, res) => {
   if (name) {
     queryObject.name = { $regex: name, $options: "i" };
   }
-  let apiData = product.find(queryObject);
+  let apiData = find(queryObject);
   if (sort) {
     let sortFix = sort.replace(",", " ");
     apiData = apiData.sort(sortFix);
@@ -28,7 +28,7 @@ const getAllProducts = async (req, res) => {
 };
 
 const getAllProductsTesting = async (req, res) => {
-  const myData = await product.find(req.query).select("name");
+  const myData = await find(req.query).select("name");
   res.status(200).json({ myData });
 };
-module.exports = { getAllProducts, getAllProductsTesting };
+export default { getAllProducts, getAllProductsTesting };

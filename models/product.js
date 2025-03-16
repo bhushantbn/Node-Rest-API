@@ -1,7 +1,7 @@
-const mongoose = require("mongoose");
+import { Schema, model } from "mongoose";
 require("dotenv").config();
 
-const productSchema = new mongoose.Schema({
+const productSchema = new Schema({
   name: { type: String, required: true },
   price: { type: Number, required: [true, "Price must be provided"] },
   featured: { type: Boolean, default: false },
@@ -25,4 +25,4 @@ const productSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Product", productSchema);
+export default model("Product", productSchema);
