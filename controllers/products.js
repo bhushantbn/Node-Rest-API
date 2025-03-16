@@ -1,6 +1,6 @@
 import Product from "../models/product.js"; // ✅ Correct import
 
-const getAllProducts = async (req, res) => {
+export const getAllProducts = async (req, res) => {
   const { company, name, sort, select } = req.query;
   const queryObject = {};
 
@@ -33,7 +33,7 @@ const getAllProducts = async (req, res) => {
   res.status(200).json({ myData, perPage: myData.length });
 };
 
-const getAllProductsTesting = async (req, res) => {
+export const getAllProductsTesting = async (req, res) => {
   const myData = await Product.find(req.query).select("name"); // ✅ Use `Product.find()`
   res.status(200).json({ myData });
 };

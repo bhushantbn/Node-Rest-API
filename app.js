@@ -1,27 +1,27 @@
 import express from "express";
 import connectDB from "./db/db.js";
-import products_routes from "./routes/products.js";
+import productsRoutes from "./api/products.js"; // ✅ Updated Path
 import dotenv from "dotenv";
 
 dotenv.config();
-
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
-app.use(express.json());
-
-// Routes
-app.use("/api/products", products_routes);
+app.use(express.json()); // ✅ Allow JSON Parsing
+app.use("/api/products", productsRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Hi, this is a Node.js application");
+  res.send("Hi, this is a Node.js application deployed on Vercel.");
 });
 
-// ✅ Remove app.listen()
-// ✅ Connect to DB when API is called
-connectDB()
-  .then(() => console.log("Database connected successfully"))
-  .catch((error) => console.log("Database connection error:", error));
-
-export default app; // ✅ Export the app
+const start = async () => {
+  try {
+    await connectDB();
+    app.listen(PORT, () => {
+      console.log(`Application running on port ${PORT}`);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+start();
