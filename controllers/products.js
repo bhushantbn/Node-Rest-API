@@ -1,4 +1,4 @@
-import Product from "../models/product.js"; // ✅ Correct import
+import {Product} from "../models/product.js"; // ✅ Correct import
 
 export const getAllProducts = async (req, res) => {
   const { company, name, sort, select } = req.query;

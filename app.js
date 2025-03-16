@@ -1,7 +1,7 @@
 import express from "express";
 import connectDB from "./db/db.js";
 import productsRoutes from "./api/products.js"; // ✅ Updated Path
-import dotenv from "dotenv";
+import {dotenv} from "dotenv";
 
 dotenv.config();
 const app = express();

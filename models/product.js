@@ -1,5 +1,4 @@
 import { Schema, model } from "mongoose";
-require("dotenv").config();
 
 const productSchema = new Schema({
   name: { type: String, required: true },
